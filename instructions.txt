@@ -1,0 +1,32 @@
+
+ 
+ How to Play:
+ O. Uncomment menu() at the bottom of the file to begin playing 
+ 1. Always use CAPITAL LETTERS when asked for input 
+ 2. When deciding where to put your game pieece make sure to have it formatted CAPITAL LETTER + Number (ex: A1 NOT a1 or 1A). If you mess up it will prompt you to try again. 
+ The goal is to win 3 rounds of tic tac toe; as you progress through the game you will be able to view how many games X and O have won as well as how many rounds it took for you to win! 
+
+
+This is a functional game of tic tac toe in three seperate modes:
+0. Person v Person 
+1. Person v AI 
+2. AI v AI (This is an easter egg! When asked to select A or B at the start of the game, type in 42!)
+
+While it would have been easier to have a board labeled like the design below, I thought it would be hard for the user to decide where they wanted to place their next move since it is difficult to gain a holistic view of where the free (blank) spaces are. So, I implemeneted an alphanumeric board (kind of akin to a chess board) to provide an optimized experience for the user. It was a little difficult to implement until I remembered dictionaries existed! I needed to write more helper functions to "convert" my alphanumeric stirngs into integers, but all in all it wasn't too bad. 
+
+
+1 | 2 | 3
+----------
+4 | 5 | 6
+----------
+7 | 8 | 9
+----------
+
+Between my milestone and final iteratoin, I made an AI that was "too smart"; it only won or tied games. So, I stuck with an AI that won/blocked when it could and made a random move otherwsie. At first I made the AI put its first piece in the middle of the board if free, but this also made it "too smart" when playing against each other/ if the computer got the first move. I wanted to make sure that regardless of the gameplay option selected the algorithms weren't too biased in selecting a winner. So, I stuck with the AI that was just the right amount of dumb. 
+
+If I had more time I would try to make a 3 by 3 board; I think I have most of the base methods complete, and it would be more debugging than actual code writing. I also wanted to be able to save the outputs of each game to a text file so that users could have a "receipt" of their game. I tried to do this, but there were a lot of bugs. 
+
+Notes:
+ * MAKE SURE TO HAVE TERMCOLOR (TO INSTALLL TYPE PIP INSTALL TERMCOLOR IN TERMINAL)
+ ** I rec the "Solarized Light" color palette on VS Code for the most aesthetic gameplay experience 
+
